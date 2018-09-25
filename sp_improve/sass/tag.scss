@@ -1,0 +1,60 @@
+.archive-header {
+  background : var(--main-background-color);
+  font-size : 16px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border-bottom: 0px;
+
+  div.tag-description {
+    background-color: #fff;
+    font-size:1.5em;
+
+    h2 {
+      font-size: 1em;
+      background: var(--bar-color);
+      padding: 0.4em 0px 0.4em 1em;
+      color: white;
+      font-weight: 900;
+    }
+
+    h1.archive-title{
+      font-size : 16px;
+      margin-left : 3px;
+    }
+
+    .flex-container {
+      display: -webkit-flex; /* Safari */
+      display: flex;
+      -webkit-flex-direction: row; /* Safari */
+      flex-direction:         row;
+      margin: 5px 0px;
+
+      & > div {
+        margin: 1% 0;
+      }
+      .left {
+        width: 38%;
+        margin: auto;
+        img {
+          object-fit: contain;
+          width: 95%;
+        }
+      }
+      .right {
+        width: 58%;
+
+        h3 {
+          font-size: 16px;
+        }
+
+        ul {
+					margin-right: 3px;
+          li {
+            font-size: 14px;
+            text-indent: 1em;
+          }
+        }
+      }
+    }
+  }
+}

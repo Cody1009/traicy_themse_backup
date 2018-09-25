@@ -1,0 +1,337 @@
+.fackMargin{
+	display : block;
+	height : 15px;
+	background-color : var(--main-background-color);
+}
+
+
+#content table{
+	display : block;
+	width : calc(336px * 2 + 20px);
+	margin : 0px auto;
+}
+
+/* 見出し st */
+#topic{
+	padding-top : 5px;
+	padding-bottom : 10px;
+	background : #fff;
+	max-width : calc(336px * 2 + 20px);
+	margin : 0px auto;
+}
+.main_category{
+	font-size: 25px;
+	border: none;
+	text-align: left;
+	margin-bottom : 10px;
+	text-align : center;
+}
+h2.main_category{
+	font-size: 25px;
+	margin-top: -5px;
+	text-align: center;
+	padding: 10px 0px;
+	background: var(--bar-color);
+	color: white;
+	margin-bottom: 20px;
+}
+/* 見出し en */
+/* お知らせ st */
+.contents li.active {
+	color : var(--main-title-color);
+	font-size : 12px;
+}
+.contents li.active:hover {
+	text-decoration : underline;
+}
+ul.contents.information{
+	margin-bottom: 0px;
+}
+a > li.active{
+	height : 25px;
+}
+
+#content{
+	background : var(--main-background-color);
+}
+
+/* キャンペーンボックス */
+#content #campaign{
+	width : 100%;
+	max-width : calc(336px * 2 + 20px);
+	margin : auto;
+	padding : 3px;
+	margin-bottom : 10px;
+	background : #fff;
+	margin-top: 20px;
+}
+#content .campaignContents:hover{
+}
+#campaign > h1{
+	font-size: 25px;
+	margin: -3px -3px;
+	text-align: center;
+	padding: 10px 0px;
+	background: var(--bar-color);
+	color: white;
+	margin-bottom: 20px;
+}
+
+#content .campaignContents{
+	display : block;
+	position : relative;
+	height : 110px;
+}
+#content .campaignContents .campaignImg{
+	position: absolute;
+	top: 0;
+	right : 0;
+	bottom: 0;
+	width: 34%;
+	margin-right : 1% !important;
+	height : 100%;
+	overflow:hidden;
+  	display: inline-block;
+  	box-sizing : border-box;
+}
+#content .campaignContents .campaignImg > img{
+	width:auto;
+	height:auto;
+	max-width:100%;
+	max-height:100%;
+	position: absolute;
+	display: block;
+	height: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+#content .campaignContents > div{
+	position : relative;
+	height : 100%;
+	width : 65%;
+	box-sizing : border-box;
+}
+#content .campaignContents .campaignTitle{
+	position : absolute;
+	left : 0;
+	bottom : 23px;
+	margin : 0px;
+	width : 100%;
+	height : calc(100% - 23px);
+	overflow : hidden;
+	display : inline-block;
+	font-size : 15px;
+	line-height : 19px;
+	color : var(--main-title-color);
+}
+#content .campaignContents .campaignDate{
+	position : absolute;
+	left : 0;
+	bottom : 0;
+	margin : 0px;
+	width : 100%;
+	height : 22px;
+	line-height : 22px;
+	font-size : 16px;
+	text-align : left;
+	overflow : hidden;
+	display : inline-block;
+}
+
+
+.flexBox{
+	width : 100%;
+	display: -webkit-flex;
+   	display: flex;
+	margin : 0px auto;
+	font-size : 18px;
+	line-height : 24px;
+	color : var(--main-color);
+}
+#main > h1{
+	font-size : 18px;
+	text-align : center;
+	margin-top : 20px;
+}
+.flexBox .right{
+	-webkit-flex: 1;
+  	flex: 1;
+}
+.flexBox .left{
+	-webkit-flex: 1;
+  	flex: 1;
+}
+.flexBox a{
+	color : var(--main-title-color) !important;
+	text-decoration : none;
+	display : block;
+}
+.flexBox a:hover{
+	background-color : rgba(255,255,204,0.7);
+}
+.campaignContents > div:hover{
+	background-color : rgba(255,255,204,0.7);
+}
+
+#content .campaignContents .campaignDate span{
+  line-height: normal;
+}
+.addGcalender.frontPage{
+  position : absolute;
+  right : 0;
+  bottom : 0;
+  margin : 0px;
+  width : 22px;
+  height :22px;
+  display : inline-block;
+  text-align : left;
+}
+.addGcalender.frontPage a, .addGcalender.frontPage i {
+  display: inline !important;
+  width:   auto !important;
+  font-size: 18px;
+  line-height: 100%;
+  color: black;
+}
+
+
+
+
+/**
+	キャンペーン情報
+**/
+#ivent_campaign {
+	margin-bottom: 30px;
+
+	h1 {
+		text-align: center;
+    font-size: 24px;
+    padding: 12px 0px;
+    background: var(--bar-color);
+    color: white;
+    margin-top: 15px;
+	}
+
+
+	#campaign-tab-menu {
+	  list-style: none;
+	  background: white;
+	  font-size: 0px;
+
+	  li {
+	    display: inline-block;
+	    font-size: 16px;
+	    font-weight: 400;
+	    width: calc(100%/3);
+	    line-height: 40px;
+	    letter-spacing: normal;
+	    text-align: center;
+	    color: white;
+	    background: var(--bar-color);
+	  }
+
+	  li.active {
+	    background: white;
+	    color: var(--bar-color);
+	    background: #fff;
+	    font-weight: 600;
+	    -webkit-box-sizing: border-box;
+	    box-sizing: border-box;
+	    height: 100%;
+			font-size: 16px;
+		}
+	}
+
+	#campaign-tab-box {
+	  & > div {
+	    display: none;
+	  }
+	  & > div.active {
+	    display: block;
+	  }
+		#campaign {
+			margin: 0px;
+			max-width: 100%;
+			box-sizing: border-box;
+
+			#aCampaign {
+				display: block;
+				height: 80px;
+				width: 100%;
+			}
+
+			#campaignContents {
+				height: 100%;
+		    display: block;
+		    position: relative;
+		    background: #fff;
+
+				#campaginContentsRight {
+					height: 100%;
+					width: 80%;
+					position: absolute;
+					top: 0;
+					right: 0;
+					font-size: 0;
+
+					#campaignTitle {
+						position: absolute;
+						top: 0;
+						right: 0;
+						margin: 0;
+						-webkit-box-sizing: border-box;
+						box-sizing: border-box;
+						width: 100%;
+						height: 70%;
+						overflow: hidden;
+						display: inline-block;
+						font-size: 15px;
+						padding: 3px 5px 3px 3px;
+						color: var(--main-title-color);
+					}
+					#campaignDate {
+						position: absolute;
+				    left: 0;
+				    bottom: 0;
+				    margin: 0;
+				    font-size: 14px;
+				    width: 100%;
+				    height: 30%;
+				    overflow: hidden;
+				    display: inline-block;
+				    text-align: center;
+					}
+				}
+				#campaignImg {
+					position: absolute;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					width: 20%;
+					height: 100%;
+					overflow: hidden;
+					display: inline-block;
+
+					img {
+						width: auto;
+				    height: auto;
+				    max-width: 100%;
+				    max-height: 80px;
+				    position: absolute;
+				    display: block;
+				    height: auto;
+				    top: 0;
+				    right: 0;
+				    bottom: 0;
+				    left: 0;
+				    margin: auto;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+}

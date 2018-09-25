@@ -1,0 +1,193 @@
+/* 主にサイドバーに関するスタイル PC版 */
+@media screen and (min-width: 600px) {
+	#sidebar {
+		float: right;
+		min-width:300px;
+	}
+	#sidebar #scroll{
+		width:300px;
+	}
+}
+
+@media screen and (min-width : 600px){
+	#sidebar a{
+		display : block;
+	}
+}
+/* キャンペーンボックス */
+@media screen and (min-width: 600px) {
+	#sidebar #campaign{
+		width : 100%;
+		margin-top : 10px;
+	}
+	#sidebar h1{
+		font-size : 20px;
+		margin-top : 10px;
+	}
+	#sidebar #campaign a{
+		color : black;
+		display : block;
+		height : 70px;
+		width : 100%;
+	}
+	#sidebar a + a{
+		border-top : 2px solid #bab7ad;
+	}
+	#sidebar a:hover{
+		background : rgba(49,192,220,0.6);
+		text-decoration : underline;	
+	}
+
+	#sidebar .campaignContents{
+		height : 100%;
+		display : block;	
+		position : relative;
+	}
+	#sidebar .campaignContents .campaignImg{
+		position: absolute;
+		top: 0;
+		right : 0;
+		bottom: 0;
+		width: 30%;
+		height : 100%;
+		overflow:hidden;
+    	display: inline-block;
+	}
+	#sidebar .campaignContents .campaignImg > img{
+		width:auto;
+		height:auto;
+		max-width:100%;
+		max-height:100%;
+		position: absolute;
+		display: block;
+		height: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+	}
+	#sidebar .campaignContents > div{
+		height : 100%;
+		width : 70%;
+		position : relative;
+		font-size : 0;
+	}
+	#sidebar .campaignContents .campaignTitle{
+		position : absolute;
+		top : 0;
+		left : 0;
+		margin : 0px;
+		box-sizing : border-box;
+		width : 100%;
+		height : 80%;
+		overflow : hidden;
+		display : inline-block;
+		font-size : 12px;
+		padding : 3px 5px 3px 3px;
+		color : var(--main-title-color);
+	}
+	#sidebar .campaignContents .campaignDate{
+		position : absolute;
+		left : 0;
+		bottom : 0;
+		margin : 0px;
+		font-size : 12px;
+		width : 100%;
+		height : 20%;
+		overflow : hidden;
+		display : inline-block;
+		text-align : center;
+	}
+}
+
+/* アクセスランキング */
+@media screen and (min-width: 600px) {
+	#sidebar .ranking{
+		height : 350px;
+		max-width : calc(300px + 5px);
+		display : block;
+		margin-top : 5px;
+		margin-bottom : 20px;
+	}
+	#sidebar .rankingTitle{
+		display : block;
+		font-size : 20px;
+		color : black;
+		font-weight : bold;
+		margin-top : 10px;
+	}
+	#sidebar .ranking .item{
+		position : relative;
+		height: 20%;
+		width : 100%;
+	}	
+	#sidebar .item + .item{
+		border-top : 2px solid #bab7ad;
+	}
+	#sidebar .ranking .item .titleLeft{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		margin: 0px !important;
+		width : 70%;
+		height : 100%;
+		overflow:hidden;
+	    display: inline-block;
+		font-size : 0px;
+	}
+	#sidebar .ranking .item .titleLeft > div{
+		font-size : 12px;
+		padding : 7px 7px 0px 7px;
+		color : black;
+		color : var(--main-title-color);
+	}
+	#sidebar .ranking .item .titleLeft > div:hover{
+		text-decoration : underline;
+	}
+	#sidebar .ranking .item .titleLeft > div > div{
+		font-size : 10px;
+		padding-top : 3px;
+		float : right;
+		position : absolute;
+		bottom : 5px;
+		right : 5px;
+	}
+	#sidebar .ranking .item .thumbRight{
+		position : absolute;
+		top : 0;
+		right : 0;
+		margin: 0px !important;
+		width: 30%;
+		height : 100%;
+		overflow:hidden;
+	    display: inline-block;
+	}
+	#sidebar .ranking .item .thumbRight > img{
+		width:auto;
+		height:auto;
+		max-width:100%;
+		max-height:100%;
+		position: absolute;
+		display: block;
+		height: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+	}
+	#sidebar .ranking .item .rank{
+		font-size : 20px;
+		padding  : 5px 5px 0px 5px;
+		background : rgba(94, 185, 77, 0.9);
+		position : absolute;
+		top : -5px;
+		right : 1px;
+		overflow : visible;
+		z-index : 1;
+	}
+}
+
+
